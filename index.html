@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages de Services</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        
+        h2 {
+            color: #27ae60;
+            border-bottom: 2px solid #27ae60;
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        th {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ecf0f1;
+            vertical-align: top;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        tr:hover {
+            background-color: #e8f4fd;
+            transition: background-color 0.3s ease;
+        }
+        
+        .nombre-conv {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 16px;
+        }
+        
+        .prix {
+            font-weight: bold;
+            color: #27ae60;
+            font-size: 15px;
+        }
+        
+        .prix::after {
+            content: " €";
+        }
+        
+        .description {
+            max-width: 300px;
+            line-height: 1.4;
+            font-size: 13px;
+        }
+        
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .features li {
+            padding: 2px 0;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .sur-devis {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+        }
+        
+        .highlight-row {
+            background-color: #fff3cd !important;
+            border-left: 4px solid #f39c12;
+        }
+        
+        .number-format {
+            text-align: right;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Packages de Services Communication</h1>
+        
+        <h2>📦 Package Standard</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre de Conversations</th>
+                    <th>Volume de Messages</th>
+                    <th>Coût Technique (€)</th>
+                    <th>Prix de Vente (€)</th>
+                    <th>Marge (€)</th>
+                    <th>Services Inclus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="nombre-conv">500</td>
+                    <td class="number-format">32 000</td>
+                    <td class="number-format">10 750</td>
+                    <td class="prix number-format">25 900</td>
+                    <td class="prix number-format">15 150</td>
+                    <td class="description">
+                        <ul class="features">
+                            <li>500 tickets de support</li>
+                            <li>32 000 messages inclus</li>
+                            <li>Notification "human in the loop"</li>
+                            <li>Numéro WhatsApp Business</li>
+                            <li>Message de service illimité</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nombre-conv">1 000</td>
+                    <td class="number-format">64 000</td>
+                    <td class="number-format">21 500</td>
+                    <td class="prix number-format">50 900</td>
+                    <td class="prix number-format">29 400</td>
+                    <td class="description">
+                        <ul class="features">
+                            <li>1 000 tickets de support</li>
+                            <li>64 000 messages inclus</li>
+                            <li>Notification "human in the loop"</li>
+                            <li>Numéro WhatsApp Business</li>
+                            <li>Message de service illimité</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nombre-conv">5 000</td>
+                    <td class="number-format">320 000</td>
+                    <td class="number-format">107 500</td>
+                    <td class="prix number-format">250 900</td>
+                    <td class="prix number-format">143 400</td>
+                    <td class="description">
+                        <ul class="features">
+                            <li>5 000 tickets de support</li>
+                            <li>320 000 messages inclus</li>
+                            <li>Notification "human in the loop"</li>
+                            <li>Numéro WhatsApp Business</li>
+                            <li>Message de service illimité</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="highlight-row">
+                    <td class="nombre-conv">10 000 et plus</td>
+                    <td colspan="4" class="sur-devis">SUR DEVIS</td>
+                    <td class="description">Package personnalisé selon vos besoins</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>✈️ Package Agence de Voyage</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre de Conversations</th>
+                    <th>Volume de Messages</th>
+                    <th>Coût Technique (€)</th>
+                    <th>Prix de Vente (€)</th>
+                    <th>Marge (€)</th>
+                    <th>Services Inclus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="nombre-conv">500</td>
+                    <td class="number-format">32 000</td>
+                    <td class="number-format">13 270</td>
+                    <td class="prix number-format">33 900</td>
+                    <td class="prix number-format">20 630</td>
+                    <td class="description">
+                        <ul class="features">
+                            <li>500 tickets de support</li>
+                            <li>32 000 messages inclus</li>
+                            <li>Intégration API CRM</li>
+                            <li>Notification "human in the loop"</li>
+                            <li>Numéro WhatsApp Business</li>
+                            <li>Message de service illimité</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nombre-conv">1 000</td>
+                    <td class="number-format">64 000</td>
+                    <td class="number-format">26 540</td>
+                    <td class="prix number-format">67 800</td>
+                    <td class="prix number-format">41 260</td>
+                    <td class="description">
+                        <ul class="features">
+                            <li>1 000 tickets de support</li>
+                            <li>64 000 messages inclus</li>
+                            <li>Intégration API CRM</li>
+                            <li>Notification "human in the loop"</li>
+                            <li>Numéro WhatsApp Business</li>
+                            <li>Message de service illimité</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nombre-conv">5 000</td>
+                    <td class="number-format">320 000</td>
+                    <td class="number-format">132 700</td>
+                    <td class="prix number-format">339 000</td>
+                    <td class="prix number-format">206 300</td>
+                    <td class="description">
+                        <ul class="features">
+                            <li>5 000 tickets de support</li>
+                            <li>320 000 messages inclus</li>
+                            <li>Intégration API CRM</li>
+                            <li>Notification "human in the loop"</li>
+                            <li>Numéro WhatsApp Business</li>
+                            <li>Message de service illimité</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="highlight-row">
+                    <td class="nombre-conv">10 000 et plus</td>
+                    <td colspan="4" class="sur-devis">SUR DEVIS</td>
+                    <td class="description">Package personnalisé avec fonctionnalités avancées</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div style="margin-top: 30px; padding: 20px; background: #e8f5e8; border-radius: 8px; border-left: 4px solid #27ae60;">
+            <h3 style="margin-top: 0; color: #27ae60;">💡 Points Clés</h3>
+            <ul>
+                <li><strong>Package Agence de Voyage :</strong> Inclut une intégration API CRM en plus des fonctionnalités standard</li>
+                <li><strong>Évolutivité :</strong> Tous les packages incluent des messages de service illimités</li>
+                <li><strong>Support Premium :</strong> Notification "human in the loop" pour une intervention humaine quand nécessaire</li>
+                <li><strong>Flexibilité :</strong> Solutions sur mesure disponibles pour les gros volumes (10 000+ conversations)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
